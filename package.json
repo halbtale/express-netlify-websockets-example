@@ -1,0 +1,23 @@
+{
+    "name": "netlify-express-websockets",
+    "version": "0.0.1",
+    "description": "websockets on netlify",
+    "main": "functions/server.js",
+    "scripts": {
+        "build": "netlify-lambda build express",
+        "start": "nodemon server-local.js"
+    },
+    "keywords": [
+        "netlify",
+        "express.js"
+    ],
+    "author": "nenino2",
+    "dependencies": {
+        "express-ws": "^4.0.0"
+    },
+    "devDependencies": {
+        "express": "^4.16.3",
+        "netlify-lambda": "^0.4.0",
+        "serverless-http": "^1.6.0"
+    }
+}
